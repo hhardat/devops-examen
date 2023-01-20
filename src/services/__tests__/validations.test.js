@@ -27,4 +27,8 @@ describe("validation test suites - isValid", () => {
         const result = isValid("");
         expect(result).toBe(false);
     })
+    test("should return false as the label is not eight char or more", () => {
+        const result = isValid("azer");
+        expect(result).toBe(false);
+    })
 })
