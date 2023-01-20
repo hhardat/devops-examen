@@ -39,4 +39,8 @@ describe("validation test suites - isValid", () => {
         const result = isValid("azruytruioyz=");
         expect(result).toBe(false);
     })
+    test("should return true as the label is valid", () => {
+        const result = isValid("aazzzzee!8è!");
+        expect(result).toBe(true);
+    })
 })
